@@ -39,3 +39,41 @@ MedicoAI is an intelligent, agent-powered medical imaging analysis tool built us
 
 ## 📁 Project Structure
 
+
+---
+
+## 🧪 How It Works
+
+1. **User uploads a medical image** via the Streamlit interface.
+2. **Image is preprocessed** and passed to a multimodal AI agent.
+3. **Agent analyzes the image** using Gemini + DuckDuckGo tools and a structured prompt.
+4. **AI generates a detailed report** including diagnosis, key findings, and simplified explanation.
+5. **UI displays the report** for medical professionals or patients.
+
+---
+
+## ⚙️ Installation
+
+### 🔧 Prerequisites
+- Python 3.8+
+- Google Gemini API Key
+
+### 📦 Setup Instructions
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/MedicoAI.git
+cd MedicoAI
+
+# 2. Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Set your Google API key
+export GOOGLE_API_KEY="your_gemini_api_key"  # Or set it inside app.py
+
+# 5. Run the Streamlit app
+streamlit run app.py
